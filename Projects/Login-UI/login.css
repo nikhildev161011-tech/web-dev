@@ -1,0 +1,153 @@
+/* Import clean modern font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Screen ke bilkul beech mein (Horizontally & Vertically) align karne ke liye */
+body {
+  background-color: #F5F5F7; /* Apple-inspired clean off-white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #1d1d1f;
+}
+
+/* Main Form Card Container */
+.logIN {
+  background: #ffffff;
+  padding: 40px 32px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Heading & Paragraph Styling */
+.heading {
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.main-heading h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.prea p {
+  font-size: 14px;
+  color: #707075;
+  line-height: 1.5;
+}
+
+/* Input Group Container */
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+/* Input Fields Styling */
+.input-group input {
+  width: 100%;
+  padding: 14px 46px 14px 46px; /* Left aur Right dono jagah icons ke liye space */
+  background-color: #FAFAFC;
+  border: 1px solid #E2E2E8;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #1d1d1f;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Input Focus Effect */
+.input-group input:focus {
+  border-color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
+}
+
+.input-group input::placeholder {
+  color: #8E8E93;
+}
+
+/* Left side wale icons (User, Email, Lock) */
+.input-group > i:not(.toggle-password) {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8E8E93;
+  font-size: 15px;
+}
+
+/* Right side wala Eye icon (Password toggle) - Forcefully right mein locked */
+.input-group .toggle-password {
+  position: absolute;
+  right: 16px !important;
+  left: auto !important;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8E8E93;
+  cursor: pointer;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.toggle-password:hover {
+  color: #111111;
+}
+
+/* Submit Button Container & Styling */
+.btn-container {
+  margin-top: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.sumbit-btn {
+  width: 100%; /* Poori width lene ke liye */
+  padding: 14px;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.sumbit-btn:hover {
+  background-color: #2c2c2e;
+}
+
+.sumbit-btn:active {
+  transform: scale(0.98);
+}
+
+/* Footer Sign In Section */
+.signIn-section {
+  text-align: center;
+  font-size: 14px;
+  color: #707075;
+}
+
+.signIn-section a {
+  color: #0066CC;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.signIn-section a:hover {
+  text-decoration: underline;
+}
